@@ -21,7 +21,7 @@ The only known way to export your friends' email addresses is through Yahoo:
 be added to your Yahoo contacts. Only their **name** and **email address(es)** will be imported. You'll end up
 with something like this:
 
-![Yahoo screenshot](https://github.com/ipince/facebook-contact-exporter/master/yahoo_screenshot.png)
+![Yahoo screenshot](https://github.com/ipince/facebook-contact-exporter/blob/master/yahoo_shot.png)
 
 Next, you'll want to export your Yahoo contacts into a csv file so you can import it elsewhere. Unfortunately,
 Yahoo doesn't allow you to do this (if you try to export, it will only export contacts you've added yourself,
@@ -31,12 +31,14 @@ not those you imported from Facebook). But there's a workaround:
 *Detailed view* layout and click on *Print*.
 2. A new tab will be opened and a print dialog will come up. Go ahead and **cancel** the print dialog. You'll
 be left with the open tab displaying your contact info, looking like this:
-![Printed contacts tab](https://github.com/ipince/facebook-contact-exporter/master/yahoo_screenshot.png)
+![Printed contacts tab](https://github.com/ipince/facebook-contact-exporter/blob/master/yahoo_printed.png)
 
 3. Hightlight the entire text on the page, like in the screenshot below. Copy it and paste it into a notepad, or
 vim, or any text editor. The file should look like the sample file `sample_printed_contacts.txt` in this repo.
-4. Run `printed-contacts-to-csv.py` and you'll see an output file named `import.csv`. There's an example of how
-that file will look like in this repo too (`sample_import.csv`).
+![Highlighted contacts](https://github.com/ipince/facebook-contact-exporter/blob/master/yahoo_highlighted.png)
+
+4. Run `printed-contacts-to-csv.py > import.csv` and you'll see an output file named `import.csv`.
+There's an example of how that file will look like in this repo too (`sample_import.csv`).
 
 That's it! Now you can import that file into Google contacts, or Outlook, or wherever you want.
 
